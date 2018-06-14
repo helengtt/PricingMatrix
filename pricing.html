@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet">
     <!-- jQuery javascript -->
     <script type="application/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/segmentControl.js"></script>
   </head>
 
   <body>
@@ -21,29 +22,72 @@
         <div class="header__tagline">Try any plan free for 30 days. Upgrade, downgrade or cancel at anytime.</div>
     </div>
 
+    <!-- segment control -->
+    <div class="container">
+        <div class="segmented">
+            <label class="monthly"><input type="radio" name="segmented" /> Billed Monthly</label>
+            <label class="checked annually"><input type="radio" name="segmented" checked/>Billed Annually</label>
+        </div>
+    </div>
+
+    <!-- table -->
     <div class="Rtable Rtable--4cols Rtable--collapse">
 
-        <div style="order:0;" class="Rtable-cell Rtable-cell--head">Account Type</div>
-        <div style="order:1;" class="Rtable-cell Rtable-cell--head">Price</div>
-        <div style="order:2;" class="Rtable-cell">Data</div>
-        <div style="order:3;" class="Rtable-cell">Data uploading</div>
-        <div style="order:4;" class="Rtable-cell Rtable-cell--foot">Data uploading</div>
+        <div style="order:0;" class="Rtable-cell Rtable-cell--head column--one">Account Type</div>
+        <div style="order:1;" class="Rtable-cell Rtable-cell--head column--one">Price</div>
+        <div style="order:2;" class="Rtable-cell column--one">Data</div>
+        <div style="order:3;" class="Rtable-cell column--one">Data uploading</div>
+        <div style="order:4;" class="Rtable-cell Rtable-cell--foot column--one">Data uploading</div>
         
-        <div style="order:0;" class="Rtable-cell Rtable-cell--head">Free</div>
-        <div style="order:1;" class="Rtable-cell Rtable-cell--head">$0</div>
-        <div style="order:2;" class="Rtable-cell">Free $0 per/user/month</div>
-        <div style="order:3;" class="Rtable-cell">10MB per month</div>
-        <div style="order:4;" class="Rtable-cell Rtable-cell--foot"><img src="img/checked.png" alt=""></div>
+        <div style="order:0;" class="Rtable-cell Rtable-cell--head column--free">
+            <h3>Free</h3>
+            <p class="cell__description">For occasional auditing</p>
+            <hr>
+            <p class="cell__description">Limited functionality</p>
+            <hr>
+            <p class="cell__description">Up to 5 users</p>            
+        </div>
+        <div style="order:1;" class="Rtable-cell Rtable-cell--head column--free">
+            <h1>$0</h1>
+            <p class="cell__description"><i>Per month, billed annually</i></p>
+            <a href="#" class="button">Start Free Trial</a>
+        </div>
+        <div style="order:2;" class="Rtable-cell column--free">Free $0 per/user/month</div>
+        <div style="order:3;" class="Rtable-cell column--free">10MB per month</div>
+        <div style="order:4;" class="Rtable-cell Rtable-cell--foot column--free"><img src="img/checked.png" alt=""></div>
         
-        <div style="order:0;" class="Rtable-cell Rtable-cell--head">Premium</div>
-        <div style="order:1;" class="Rtable-cell Rtable-cell--head">$12</div>
-        <div style="order:2;" class="Rtable-cell">Premium $12 per/user/month</div>
-        <div style="order:3;" class="Rtable-cell">Unlimited data</div>
+        <div style="order:0;" class="Rtable-cell Rtable-cell--head column--premium">
+            <h3>Premium</h3>
+            <p class="cell__description">Unlimited data</p>
+            <hr>
+            <p class="cell__description">Epic shit</p>
+            <hr>
+            <p class="cell__description">For 10 to 10,000 users</p>
+        </div>
+        <div style="order:1;" class="Rtable-cell Rtable-cell--head column--premium">
+            <h1 class="price">$12</h1>
+            <p class="cell__description"><i>Per month, billed annually</i></p>
+            <a href="#" class="button">Start Free Trial</a>
+        </div>
+        <div style="order:2;" class="Rtable-cell column--premium">Premium <span  class="price">$12</span> per/user/month</div>
+        <div style="order:3;" class="Rtable-cell column--premium">Unlimited data</div>
+        <div style="order:4;" class="Rtable-cell Rtable-cell--foot column--premium"><img src="img/checked.png" alt=""></div>
 
-        <div style="order:0;" class="Rtable-cell Rtable-cell--head">Enterprise</div>
-        <div style="order:1;" class="Rtable-cell Rtable-cell--head"><img src="img/tablet_phone.png" alt=""></div>
-        <div style="order:2;" class="Rtable-cell">Custom Pricing</div>
-        <div style="order:3;" class="Rtable-cell">Unlimited data</div>
+        <div style="order:0;" class="Rtable-cell Rtable-cell--head column--enterprise">
+            <h3>Enterprise</h3>
+            <p class="cell__description">Unlimited data</p>
+            <hr>
+            <p class="cell__description">Cool stuff</p>
+            <hr>
+            <p class="cell__description">Up to 5 users</p>
+        </div>
+        <div style="order:1;" class="Rtable-cell Rtable-cell--head column--enterprise">
+            <p><img src="img/tablet_phone.png" alt=""></p>
+            <a href="#" class="button">Contact Us</a>
+        </div>
+        <div style="order:2;" class="Rtable-cell column--enterprise">Custom Pricing</div>
+        <div style="order:3;" class="Rtable-cell column--enterprise">Unlimited data</div>
+        <div style="order:4;" class="Rtable-cell Rtable-cell--foot column--enterprise"><img src="img/checked.png" alt=""></div>
 
     </div>
 
