@@ -63,10 +63,23 @@ body, html {
     border-right:1px solid;
 }
 .segmented input[type="radio"] {
-    appearance: none;
     -webkit-appearance:none;
     margin:0;
     position: absolute;
+}
+
+.pos_relative {
+    position:relative;
+}
+.annualBtn-tag {
+    font-size: 8px;
+    background-color: #e4c02a;
+    color:black;
+    margin:0;
+    padding:2px 10px;
+    width:50%;
+    position: absolute;
+    left: 20%;
 }
 
 /* table ------------------------------------------------------------------- */
@@ -97,6 +110,9 @@ body, html {
 .cell__description--price {
     font-size: 10px;
 }
+.bg-cell {
+    background-color: #f9f9f9;
+}
 
 /*table first column*/
 .column--one{
@@ -126,10 +142,22 @@ body, html {
 	display: inline-block;
 }
 
-/*line in table header*/
+/* table header*/
 hr{
     border: 1px solid #e6e6e6;
     margin:0 10%;
+}
+
+.cell-head-tag {
+    font-size: 10px;
+    background-color: #0063cf;
+    color:white;
+    margin:0;
+    padding:5px 0;
+    width: 100%;
+    position: absolute;
+    top:-12px;
+    left:0;
 }
 
 /* column Premium */
@@ -158,20 +186,31 @@ hr{
     }
     .Rtable--collapse {
     display: block;
-  }
-  .Rtable--collapse > .Rtable-cell {
-    width: 100% !important;
-  }
-  .Rtable--collapse > .Rtable-cell--foot {
-    margin-bottom: 32px;
-  }
-  .column--one{
-      display: none;
-  }
-  .Rtable-cell--head {
-    background-color: #0063cf;
-    color: white;
-  }
+    }
+    .Rtable--collapse > .Rtable-cell {
+        width: 100% !important;
+    }
+    .Rtable--collapse > .Rtable-cell--foot {
+        margin-bottom: 32px;
+    }
+    .column--one{
+        display: none;
+    }
+    .Rtable-cell--head {
+        background-color: #0063cf;
+        color: white;
+    }
+    .blue {
+        color: white;
+    }
+
+    /* Premium column head tag */
+    .cell-head-tag {
+        border:2px solid white;
+        width: 99%;
+        left: 0;
+        b
+    }
 
 }
 
