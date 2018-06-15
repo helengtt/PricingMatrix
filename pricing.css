@@ -104,7 +104,7 @@ body, html {
   border: 1px solid #e6e6e6;
 }
 
-.cell__description {
+.cell__description, .Rtable-cell--foot {
     font-size: 12px;
 }
 .cell__description--price {
@@ -112,6 +112,10 @@ body, html {
 }
 .bg-cell {
     background-color: #f9f9f9;
+}
+
+.bg-cell > span {
+    display:none;
 }
 
 /*table first column*/
@@ -181,6 +185,7 @@ hr{
 
 /* Responsive ------------------------------------------------------------ */
 @media only screen and (max-width: 768px) {
+    /* table */
     .Rtable {
       padding: 0 10%;  
     }
@@ -200,17 +205,19 @@ hr{
         background-color: #0063cf;
         color: white;
     }
+
+    /* cell */
     .blue {
         color: white;
+    }
+    .bg-cell > span {
+        display: inline-block;
     }
 
     /* Premium column head tag */
     .cell-head-tag {
-        border:2px solid white;
-        width: 99%;
-        left: 0;
-        b
-    }
+        display: none;
+      }
 
 }
 
