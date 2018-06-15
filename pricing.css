@@ -158,10 +158,10 @@ hr{
     color:white;
     margin:0;
     padding:5px 0;
-    width: 100%;
+    width: 26%;
     position: absolute;
     top:-12px;
-    left:0;
+    left:48%;
 }
 
 /* column Premium */
@@ -209,6 +209,9 @@ hr{
     /* cell */
     .blue {
         color: white;
+    }
+    .black {
+        color:#0063cf;
     }
     .bg-cell > span {
         display: inline-block;
